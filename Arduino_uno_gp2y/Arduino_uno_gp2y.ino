@@ -59,7 +59,7 @@ void loop() {
   // Display dust density on the LCD
   lcd.clear(); // Clear the LCD display
   lcd.setCursor(0, 0); // Set cursor to the beginning of the first line
-  lcd.print("->Density"); // Print message on the first line
+  lcd.print("-> Density "); // Print message on the first line
   lcd.setCursor(0, 1); // Set cursor to the beginning of the second line
   lcd.print(density_polvo, 3); // Print dust density value with 3 decimal places
   lcd.print(" mg x m3"); // Print unit

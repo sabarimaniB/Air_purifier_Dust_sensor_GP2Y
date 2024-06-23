@@ -56,7 +56,6 @@ void loop() {
   if(density_polvo > 0.5)
     density_polvo = 0.5;
 
-  // Display dust density on the LCD
   lcd.clear(); // Clear the LCD display
   lcd.setCursor(0, 0); // Set cursor to the beginning of the first line
   lcd.print("-> Density "); // Print message on the first line
@@ -64,5 +63,5 @@ void loop() {
   lcd.print(density_polvo, 3); // Print dust density value with 3 decimal places
   lcd.print(" mg x m3"); // Print unit
   delay(2000); // Delay for 2 seconds
-  delay(1000); // Delay for 1 second
+  delay(1000);
 }
